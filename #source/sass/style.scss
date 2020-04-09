@@ -506,37 +506,44 @@ body {
     &__list {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 auto 18px auto;
+        margin: -15px calc(auto - 43px) -15px calc(auto - 43px);
+        max-width: 1150px;
         justify-content: space-between;
+        @media(max-width: 899px) {
+            margin: -20px calc(auto - 20px) -20px calc(auto - 20px);
+        }
         @media(max-width: 767px) {
             flex-direction: column;
+            margin: -20px;
         }
     }
 
     &__item {
-        flex: 0 1 calc(50% - 94px);
-        margin: 0 47px -18px 47px;
+        flex: 0 1 calc(50% - 86px);
+        margin: 15px 43px;
+        padding: 127px 0 0 154px;
         @media(max-width: 899px) {
             flex: 0 1 calc(50% - 40px);
-            margin: 0 20px -18px 20px;
+            margin: 20px;
         }
         @media(max-width: 767px) {
-            flex: 0 1 50%;
-            margin: 0 0 -18px 0;
+            flex: 0 1 100%;
         }
-        &:nth-child(4) {
-            .hard__image {
-                position: relative;
-                right: 10px;
-                margin: 0 0 0 -10px;
-            }
+        @media(max-width: 424px) {
+            padding: 127px 0 0 50px;
         }
-    }
-
-    &__image {
-        display: flex;
-        align-items: flex-end;
-        height: 179px;
+        &-1 {
+            background: url("images/hard/01.png") 0 0 no-repeat;
+        }
+        &-2 {
+            background: url("images/hard/02.png") 0 15px no-repeat;
+        }
+        &-3 {
+            background: url("images/hard/03.png") 1px 1px no-repeat;
+        }
+        &-4 {
+            background: url("images/hard/04.png") -10px 10px no-repeat;
+        }
     }
 
     &__text {
@@ -544,13 +551,7 @@ body {
         font-size: 18px;
         line-height: 26px;
         font-style: italic;
-        max-width: calc(100% - 154px);
-        position: relative;
-        bottom: 52px;
-        left: 154px;
         @media(max-width: 424px) {
-            left: 50px;
-            max-width: calc(100% - 50px);
             background-color: #fff;
             padding: 15px;
         }
