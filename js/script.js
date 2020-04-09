@@ -26,6 +26,7 @@ $('.homescreen__slider').owlCarousel({
 	items: 1,
 	dots: true,
 	navText:false,
+	autoHeight:true,
 })
 
 /*

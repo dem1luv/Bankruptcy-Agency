@@ -20,10 +20,21 @@ body {
     margin: 0 auto;
 }
 .title {
-    
+    font-size: 40px;
+    font-family: "Chift Display";
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
 }
-.text {
-
+.subtitle {
+    color: #3a5896;
+    font-family: "Playfair Display";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 43px;
+    font-style: italic;
+    text-align: center; 
 }
 .button-back-call {
     box-shadow: 0 5px 13px rgba(228, 4, 4, 0.3);
@@ -58,6 +69,83 @@ body {
     font-weight: 300;
     padding: 0 28px;
     text-align: center;
+}
+.form {
+    border: 8px solid #3a5896;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    @media(max-width: 767px) {
+        max-width: 100%;
+    }
+    &__title {
+        font-family: "Playfair Display";
+        font-size: 22px;
+        font-weight: 700;
+        max-width: 265px;
+        margin: 0 0 20px 0;
+        z-index: 1;
+    }
+
+    &__text {
+        font-family: "Playfair Display";
+        font-size: 16px;
+        font-style: italic;
+        margin: 0 0 30px 0;
+        z-index: 1;
+    }
+
+    &__tel {
+        margin: 0 0 15px 0;
+        z-index: 1;
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__button-back-call {
+        margin: 0 0 30px 0;
+        max-width: 225px;
+        width: 100%;
+        height: 55px;
+        border-radius: 28px;
+        font-size: 14px;
+        z-index: 1;
+        @media(max-width: 767px) {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &__text-we {
+        font-size: 13px;
+        font-weight: 300;
+        margin: 0 0 15px 0;
+        z-index: 1;
+    }
+
+    &__checkbox-container {
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        input {
+            margin: 0 8px 0 0;
+        }
+        span {
+            font-size: 11px;
+            color: #999999;
+            @media(max-width: 767px) {
+                text-align: left;
+            }
+            a {
+                text-decoration: underline;
+                color: #999999;
+            }
+        }
+    }
 }
 /* content */
 .header {
@@ -303,11 +391,7 @@ body {
     }
 
     &__title {
-        font-size: 40px;
-        font-family: "Chift Display";
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 40px;
+        text-align: left;
         margin: 0 0 87px 0;
         max-width: 400px;
         z-index: 1;
@@ -355,7 +439,6 @@ body {
     }
 
     &__form {
-        border: 8px solid #3a5896;
         max-width: 421px;
         height: 410px;
         text-align: center;
@@ -366,75 +449,6 @@ body {
         padding: 15px;
         @media(max-width: 767px) {
             max-width: 100%;
-        }
-    }
-
-    .form {
-
-        &__title {
-            font-family: "Playfair Display";
-            font-size: 22px;
-            font-weight: 700;
-            max-width: 265px;
-            margin: 0 0 20px 0;
-            z-index: 1;
-        }
-    
-        &__text {
-            font-family: "Playfair Display";
-            font-size: 16px;
-            font-style: italic;
-            margin: 0 0 30px 0;
-            z-index: 1;
-        }
-    
-        &__tel {
-            margin: 0 0 15px 0;
-            z-index: 1;
-            @media(max-width: 767px) {
-                width: 100%;
-            }
-        }
-    
-        &__button-back-call {
-            margin: 0 0 30px 0;
-            max-width: 225px;
-            width: 100%;
-            height: 55px;
-            border-radius: 28px;
-            font-size: 14px;
-            z-index: 1;
-            @media(max-width: 767px) {
-                max-width: 100%;
-                width: 100%;
-            }
-        }
-    
-        &__text-we {
-            font-size: 13px;
-            font-weight: 300;
-            margin: 0 0 15px 0;
-            z-index: 1;
-        }
-    
-        &__checkbox-container {
-            display: flex;
-            align-items: center;
-            z-index: 1;
-            input {
-                margin: 0 8px 0 0;
-            }
-            span {
-                font-size: 11px;
-                color: #999999;
-                @media(max-width: 767px) {
-                    text-align: left;
-                }
-                a {
-                    text-decoration: underline;
-                    color: #999999;
-                }
-            }
         }
     }
 
@@ -460,6 +474,81 @@ body {
     }
 }
 
+.hard {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    .container {
+        padding: 100px 15px;
+    }
+
+    &__title {
+        margin: 0 0 30px 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__subtitle {
+        margin: 0 0 80px 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto 18px auto;
+        justify-content: space-between;
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        flex: 0 1 calc(50% - 94px);
+        margin: 0 47px -18px 47px;
+        @media(max-width: 899px) {
+            flex: 0 1 calc(50% - 40px);
+            margin: 0 20px -18px 20px;
+        }
+        @media(max-width: 767px) {
+            flex: 0 1 50%;
+            margin: 0 0 -18px 0;
+        }
+        &:nth-child(4) {
+            .hard__image {
+                position: relative;
+                right: 10px;
+                margin: 0 0 0 -10px;
+            }
+        }
+    }
+
+    &__image {
+        display: flex;
+        align-items: flex-end;
+        height: 179px;
+    }
+
+    &__text {
+        font-family: "Playfair Display";
+        font-size: 18px;
+        line-height: 26px;
+        font-style: italic;
+        max-width: calc(100% - 154px);
+        position: relative;
+        bottom: 52px;
+        left: 154px;
+        @media(max-width: 424px) {
+            left: 50px;
+            max-width: calc(100% - 50px);
+            background-color: #fff;
+            padding: 15px;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+}
 /* fixed */
 .fixed-pulse {
     background-color: #4fbaea;
