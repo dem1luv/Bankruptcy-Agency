@@ -20,6 +20,14 @@ $(document).ready(function(){
 	});
 });
 
+$('.homescreen__slider').owlCarousel({
+    loop:true,
+	nav:true,
+	items: 1,
+	dots: true,
+	navText:false,
+})
+
 /*
 // inputmask
 $(document).ready(function(){

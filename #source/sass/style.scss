@@ -26,7 +26,6 @@ body {
 }
 .button-back-call {
     box-shadow: 0 5px 13px rgba(228, 4, 4, 0.3);
-    border-radius: 20px;
     background-image: linear-gradient(-65deg, #ff0909 0%, #ff4115 41%, #ff6a47 43%, #ff0909 99%, #ff0909 100%);
     display: flex;
     justify-content: center;
@@ -127,6 +126,134 @@ body {
     &__button-back-call {
         width: 165px;
         height: 40px;
+        border-radius: 20px;
+    }
+}
+
+.homescreen {
+    position: relative;
+    &__top {
+        background-color: #3a5896;
+        padding: 49px 0 43px 0;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -30px;
+            left: calc(50% - 30px);
+            transform: rotate(45deg);
+            width: 60px;
+            height: 60px;
+            background-color: #3a5896;
+        }
+    }
+    
+    &__title {
+        color: #ffffff;
+        font-family: "Chift Display";
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 47px;
+        text-align: center;
+        @media(max-width: 424px) {
+            font-size: 40px;
+        }
+        span {
+            text-transform: none;
+            font-size: 30px;
+            line-height: 44px;
+        }
+    }
+
+    &__bottom {
+        background: url("images/homescreen/bg.png") 50% 50%/cover no-repeat;
+        .container {
+            position: relative;
+        }
+    }
+
+    &__slider {
+
+    }
+
+    .slider {
+        position: relative;
+        .owl-nav {
+            position: absolute;
+            width: 60%;
+            left: 20%;
+            margin: 0;
+            top: calc(50% - 13px);
+            display: flex;
+            justify-content: space-between;
+            @media(max-width: 767px) {
+                display: none;
+            }
+            .owl-prev, .owl-next {
+                width: 15px;
+                height: 26px;
+                transition: opacity .25 ease;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            .owl-prev {
+                background: url("images/!slider/left.png") 50% 50% no-repeat !important;
+            }
+            .owl-next {
+                background: url("images/!slider/right.png") 50% 50% no-repeat !important;
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            .owl-dot {
+                span {
+                    background-color: #cccccc;
+                }
+                &:hover {
+                    span {
+                        background-color: #cccccc;
+                    }
+                }
+                &.active {
+                    span {
+                        background-color: #3a5896;
+                    }
+                }
+            }
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 134px 0;
+        }
+    
+        &__title {
+            font-size: 26px;
+            font-family: "Playfair Display";
+            font-weight: 700;
+            font-style: italic;
+            max-width: 281px;
+            margin: 0 0 45px 0;
+        }
+    
+        &__button-back-call {
+            width: 225px;
+            height: 55px;
+            border-radius: 28px;
+        }
+    }
+
+    &__abs-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 }
 
