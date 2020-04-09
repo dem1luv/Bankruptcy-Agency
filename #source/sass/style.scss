@@ -77,7 +77,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 15px;
+    padding: 30px 15px;
     @media(max-width: 767px) {
         max-width: 100%;
     }
@@ -88,6 +88,9 @@ body {
         max-width: 265px;
         margin: 0 0 20px 0;
         z-index: 1;
+        @media(max-width: 767px) {
+            max-width: 100%;
+        }
     }
 
     &__text {
@@ -96,6 +99,14 @@ body {
         font-style: italic;
         margin: 0 0 30px 0;
         z-index: 1;
+    }
+
+    &__input-container {
+        display: flex;
+        @media(max-width: 767px) {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
     &__tel {
@@ -476,7 +487,6 @@ body {
 
 .hard {
     background-color: #f5f5f5;
-    overflow: hidden;
     .container {
         padding: 100px 15px;
     }
@@ -549,6 +559,63 @@ body {
         }
     }
 }
+
+.how {
+    position: relative;
+    .container {
+        padding: 100px 15px;
+    }
+    &__title {
+        margin: 0 0 70px 0;
+    }
+
+    .form {
+        max-width: 810px;
+        min-height: 310px;
+        margin: 0 auto;
+        &__title {
+            max-width: 100%;
+        }
+    
+        &__tel {
+            margin: 0 30px 0 0;
+            @media(max-width: 767px) {
+                margin: 0 0 15px 0;
+            }
+        }
+    
+    }
+
+    &__abs-image {
+        position: absolute;
+        bottom: 0;
+        right: 197px;
+        @media(max-width: 1866px) {
+            right: 150px;
+        }
+        @media(max-width: 1659px) {
+            right: 0;
+        }
+        @media(max-width: 1475px) {
+            right: -100px;
+        }
+        @media(max-width: 1273px) {
+            right: 0px;
+            width: 260px;
+        }
+        @media(max-width: 988px) {
+            right: -100px;
+        }
+        @media(max-width: 787px) {
+            width: 239px;
+        }
+        @media(max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+
 /* fixed */
 .fixed-pulse {
     background-color: #4fbaea;
@@ -616,6 +683,9 @@ body {
 }
 
 /* fancybox popups */
+.popup {
+    display: none;
+}
 .fancybox-close-small {
     display: none;
 }
