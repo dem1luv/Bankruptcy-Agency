@@ -1,0 +1,43 @@
+/* Chift Dispay */
+@font-face {
+    font-family: 'Chift Display';
+    font-display: swap;
+	src: url('fonts/ChiftDisplay/ChiftDisplay-Bold.eot');
+    src: url('fonts/ChiftDisplay/ChiftDisplay-Bold.woff') format('woff'),
+    url('fonts/ChiftDisplay/ChiftDisplay-Bold.ttf') format('truetype'),
+    url('fonts/ChiftDisplay/ChiftDisplay-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    src: url('fonts/Gilroy/Gilroy-Light.eot');
+    src: url('fonts/Gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy/Gilroy-Light.woff') format('woff'),
+    url('fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    src: url('fonts/Gilroy/Gilroy-Regular.eot');
+    src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    src: url('fonts/Gilroy/Gilroy-Medium.eot');
+    src: url('fonts/Gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+    url('fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

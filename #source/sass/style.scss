@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@import "zerostyle";
+@import "fonts";
+
+/* common styles */
+body {
+    overflow-x: hidden;
+    &.lock {
+        overflow-y: hidden;
+    }
+}
+.wrapper {
+    font-family: "Gilroy";
+}
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.title {
+    
+}
+.text {
+
+}
+.button-back-call {
+    box-shadow: 0 5px 13px rgba(228, 4, 4, 0.3);
+    border-radius: 20px;
+    background-image: linear-gradient(-65deg, #ff0909 0%, #ff4115 41%, #ff6a47 43%, #ff0909 99%, #ff0909 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 35px;
+    /* text style */
+    color: #ffffff !important;
+    font-size: 12px;
+    /* animation */
+    transition: opacity .25s ease;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+/* content */
+.header {
+    .container {
+        padding: 25px 15px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 424px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__col {
+        display: flex;
+        align-items: center;
+        &:first-child {
+            @media(max-width: 925px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            @media(max-width: 424px) {
+                align-items: center;
+            }
+        }
+        &:last-child {
+            @media(max-width: 654px) {
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+            @media(max-width: 424px) {
+                align-items: center;
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin: 0 93px 0 0;
+        @media(max-width: 925px) {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__img {
+        margin: 0 14px 0 0;
+    }
+
+    &__name {
+        font-family: "Playfair Display";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    &__city {
+        display: flex;
+        align-items: center;
+        img {
+            margin: 0 15px 0 0;
+        }
+        span {
+            font-size: 15px;
+        }
+        @media(max-width: 424px) {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__phone {
+        font-family: "Chift Display";
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0 30px 0 0;
+        @media(max-width: 654px) {
+            margin: 0;
+        }
+        @media(max-width: 424px) {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__button-back-call {
+        width: 165px;
+        height: 40px;
+    }
+}
+
+/* fixed */
+.fixed-pulse {
+    background-color: #4fbaea;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    &:before,
+    &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        border: 50%;
+        border: 1px solid #4fbaea;
+        left: -20px;
+        right: -20px;
+        top: -20px;
+        bottom: -20px;
+        border-radius: 50%;
+        animation: pulse 1.5s linear infinite;
+    }
+    @media(max-width: 767px) {
+        width: 80px;
+        height: 80px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 40px;
+        line-height: 80px;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+@media(max-width: 767px) {
+    @keyframes pulse {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+}
+
+/* fancybox popups */
+.fancybox-close-small {
+    display: none;
+}
