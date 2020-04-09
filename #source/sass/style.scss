@@ -615,7 +615,59 @@ body {
     }
 }
 
+.easy {
+    background-color: #efefef;
+    .container {
+        padding: 100px 15px;
+    }    
+    &__title {
+        margin: 0 0 99px 0;
+    }
 
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: -19.5px;
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        flex: 0 1 33.333%;
+        padding: 63px 0 0 65px;
+        background-repeat: no-repeat;
+        margin: 19.5px;
+        @media(max-width: 767px) {
+            flex: 0 1 100%;
+        }
+        &-1 {
+            background-image: url("images/easy/01.png");
+        }
+        &-2 {
+            background-image: url("images/easy/02.png");
+        }
+        &-3 {
+            background-image: url("images/easy/03.png");
+        }
+    }
+
+    &__name {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 20px;
+        font-style: italic;
+        margin: 0 0 17px 0;
+        @media(max-width: 374px) {
+            font-size: 19px;
+        }
+    }
+
+    &__text {
+        color: #666666;
+        line-height: 20px;
+    }
+}
 /* fixed */
 .fixed-pulse {
     background-color: #4fbaea;
