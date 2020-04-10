@@ -704,7 +704,7 @@ body {
         justify-content: center;
         margin: -30px -62px;
         max-width: 876px;
-        @media(max-width: 767px) {
+        @media(max-width: 781px) {
             margin: -15px -25px;
         }
         @media(max-width: 559px) {
@@ -722,7 +722,7 @@ body {
         transition: opacity .25s ease,
         background-color .25s ease;
         position: relative;
-        @media(max-width: 767px) {
+        @media(max-width: 781px) {
             margin: 15px 25px;
         }
         @media(max-width: 559px) {
