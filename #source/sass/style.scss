@@ -1168,7 +1168,73 @@ body {
             position: static;
             height: 400px;
         }
+        @media(max-width: 469px) {
+            height: 300px;
+        }
     }
+}
+
+.arrange {
+    margin: 0 0 -98px 0;
+    @media(max-width: 767px) {
+        margin: 0;
+    }
+    &__form {
+        max-width: 810px;
+        margin: 0 auto;
+        border: none;
+        padding: 50px;
+        box-shadow: 0 17px 54px rgba(0, 0, 0, 0.06);
+        background-color: #fff;
+        position: relative;
+        bottom: 98px;
+        @media(max-width: 767px) {
+            padding: 30px 15px;
+            bottom: 0;
+            box-shadow: none;
+        }
+    }
+
+    .form {
+
+        &__input-container {
+            max-width: 100%;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 20px 0;
+        }
+    
+        &__title {
+            font-size: 16px;
+            font-style: italic;
+            line-height: 24px;
+            margin: 0 30px 0 0;
+            text-align: left;
+            @media(max-width: 767px) {
+                margin: 0 0 20px 0;
+                text-align: center;
+            }
+        }
+    
+        &__tel {
+            margin: 0 30px 0 0;
+            @media(max-width: 767px) {
+                margin: 0 0 15px 0;
+                min-width: auto;
+            }
+        }
+    
+        &__button-back-call {
+            margin: 0;
+            @media(max-width: 767px) {
+                margin: 0 0 10px 0;
+            }
+        }
+    
+        &__checkbox-container {
+        }
+    }    
 }
 /* fixed */
 .fixed-pulse {
