@@ -27,6 +27,10 @@ $('.homescreen__slider').owlCarousel({
 	dots: true,
 	navText:false,
 	autoHeight:true,
+	startPosition:1,
+	autoplay:true,
+	autoplayTimeout:2500,
+	autoplayHoverPause:true,
 })
 
 $('.proc__slider').owlCarousel({
@@ -37,6 +41,9 @@ $('.proc__slider').owlCarousel({
 	navText:false,
 	autoHeight:true,
 	dotsContainer: '.proc__dots',
+	autoplay:true,
+	autoplayTimeout:6000,
+	autoplayHoverPause:true,
 })
 
 $('.proc__dot').click(function () {
@@ -49,6 +56,9 @@ $('.exp__slider').owlCarousel({
 	dots: false,
 	navText:false,
 	autoHeight:true,
+	autoplay:true,
+	autoplayTimeout:1200,
+	autoplayHoverPause:true,
 	responsive : {
 		0 : {
 			items: 2,
