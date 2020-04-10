@@ -43,6 +43,28 @@ $('.proc__dot').click(function () {
 	$(".proc__slider").trigger('to.owl.carousel', [$(this).index(), 300]);
 });
 
+$('.exp__slider').owlCarousel({
+    loop:true,
+	nav:true,
+	dots: false,
+	navText:false,
+	autoHeight:true,
+	responsive : {
+		0 : {
+			items: 2,
+			margin: 15,
+		},
+		480 : {
+			items: 2,
+			margin: 48,
+		},
+		768 : {
+			items: 3,
+			margin: 48,
+		}
+	},
+})
+
 /*
 // inputmask
 $(document).ready(function(){
