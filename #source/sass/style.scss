@@ -958,7 +958,7 @@ body {
     }
 
     &__slider {
-        max-width: 882px;
+        max-width: 930px;
     }
 
     .slider {
@@ -998,6 +998,7 @@ body {
         &__item {
             position: relative;
             display: block;
+            margin: 0 24px;
             &:before {
                 content: "";
                 display: block;

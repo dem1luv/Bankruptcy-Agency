@@ -62,15 +62,12 @@ $('.exp__slider').owlCarousel({
 	responsive : {
 		0 : {
 			items: 2,
-			margin: 15,
 		},
 		480 : {
 			items: 2,
-			margin: 48,
 		},
 		768 : {
 			items: 3,
-			margin: 48,
 		}
 	},
 })
