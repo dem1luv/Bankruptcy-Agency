@@ -29,6 +29,20 @@ $('.homescreen__slider').owlCarousel({
 	autoHeight:true,
 })
 
+$('.proc__slider').owlCarousel({
+    loop:true,
+	nav:true,
+	items: 1,
+	dots: true,
+	navText:false,
+	autoHeight:true,
+	dotsContainer: '.proc__dots',
+})
+
+$('.proc__dot').click(function () {
+	$(".proc__slider").trigger('to.owl.carousel', [$(this).index(), 300]);
+});
+
 /*
 // inputmask
 $(document).ready(function(){
