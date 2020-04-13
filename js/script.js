@@ -96,6 +96,16 @@ $(document).ready(function(){
 	$(".input-tel").inputmask({"mask": "+7|8 (999) 999-99-99"})
 });
 
+// lazy load the yandex map
+let easy_top = $(".easy").offset().top;
+$(window).bind("scroll", function(){
+	let window_top = $(this).scrollTop();
+	if (window_top > easy_top) {
+		$('.find__yandex-map').attr("src", "https://yandex.ru/map-widget/v1/?um=constructor%3Ae76448dc00502589a731d1b1acc6d3bfff486633a59454702d0dd739c487ace2&amp;source=constructor");
+		$(window).unbind("scroll");
+	}
+});
+
 /*
 // ibg
 $(document).ready(function(){
