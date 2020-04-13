@@ -297,15 +297,14 @@ body {
 
     &__bottom {
         background: url("images/homescreen/bg.png") 50% 50%/cover no-repeat;
-        min-height: 420px;
         .container {
+            min-height: 420px;
             position: relative;
         }
     }
 
     &__slider {
         position: relative;
-        min-height: 420px;
     }
 
     .slider {
