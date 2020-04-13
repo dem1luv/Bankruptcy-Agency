@@ -297,6 +297,7 @@ body {
 
     &__bottom {
         background: url("images/homescreen/bg.png") 50% 50%/cover no-repeat;
+        min-height: 420px;
         .container {
             position: relative;
         }
