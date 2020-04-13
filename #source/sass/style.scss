@@ -380,9 +380,9 @@ body {
     }
 
     &__abs-image {
-        position: absolute;
         bottom: 0;
         left: 0;
+        position: absolute;
     }
 }
 
@@ -999,6 +999,9 @@ body {
             position: relative;
             display: block;
             margin: 0 24px;
+            @media(max-width: 599px) {
+                margin: 0 12px;
+            }
             &:before {
                 content: "";
                 display: block;
