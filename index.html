@@ -73,11 +73,11 @@
                         <form action="#" class="instruction__form form">
                             <h3 class="form__title">Получите бесплатно пошаговую инструкцию</h3>
                             <p class="form__text">по процедуре банкротства прямо сейчас:</p>
-                            <input type="tel" name="tel" class="form__tel input-tel" placeholder="Введите ваш телефон" required>
+                            <input type="tel" name="tel" class="form__tel input-tel" placeholder="Введите ваш телефон" pattern="\+[7|8]\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
                             <input type="submit" class="form__button-back-call button-back-call" value="Получить инструкцию">
                             <p class="form__text-we">Мы перезвоним в течение 5 минут</p>
                             <p class="form__checkbox-container">
-                                <input type="checkbox" required><span>Согласен с <a href="#">обработкой персональных данных</a></span>
+                                <input type="checkbox" required checked><span>Согласен с <a href="#">обработкой персональных данных</a></span>
                             </p>
                         </form>
                     </div>
@@ -113,12 +113,12 @@
                         <h3 class="form__title">Наш консультант свяжется с вами и бесплатно проанализирует</h3>
                         <p class="form__text">ваш долговой портфель, чтобы определить цену услуг</p>
                         <p class="form__input-container">
-                            <input type="tel" name="tel" class="form__tel input-tel" placeholder="Введите ваш телефон" required>
+                            <input type="tel" name="tel" class="form__tel input-tel" placeholder="Введите ваш телефон" pattern="\+[7|8]\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
                             <input type="submit" class="form__button-back-call button-back-call" value="Получить инструкцию">
                         </p>
                         <p class="form__text-we">Мы перезвоним в течение 5 минут</p>
                         <p class="form__checkbox-container">
-                            <input type="checkbox" required><span>Согласен с <a href="#">обработкой персональных данных</a></span>
+                            <input type="checkbox" required checked><span>Согласен с <a href="#">обработкой персональных данных</a></span>
                         </p>
                     </form>
                 </div>
@@ -220,12 +220,12 @@
                         <h3 class="form__title">Беремся за самые сложные дела</h3>
                         <p class="form__text">Получите бесплатно консультацию по своему вопросу</p>
                         <p class="form__input-container">
-                            <input type="tel" name="tel" class="form__tel input-tel" placeholder="Введите ваш телефон" required>
+                            <input type="tel" name="tel" class="form__tel input-tel" placeholder="Введите ваш телефон" pattern="\+[7|8]\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
                             <input type="submit" class="form__button-back-call button-back-call" value="Получить инструкцию">
                         </p>
                         <p class="form__text-we">Мы перезвоним в течение 5 минут</p>
                         <p class="form__checkbox-container">
-                            <input type="checkbox" required><span>Согласен с <a href="#">обработкой персональных данных</a></span>
+                            <input type="checkbox" required checked><span>Согласен с <a href="#">обработкой персональных данных</a></span>
                         </p>
                     </form>
                 </div>
@@ -246,11 +246,11 @@
                     <form action="#" class="arrange__form form">
                         <div class="form__input-container">
                             <h3 class="form__title">Договориться о встрече на удобное для вас время:</h3>
-                            <input type="tel" name="tel" class="form__tel input-tel" placeholder="Введите ваш телефон" required>
+                            <input type="tel" name="tel" class="form__tel input-tel" placeholder="Введите ваш телефон" pattern="\+[7|8]\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
                             <input type="submit" class="form__button-back-call button-back-call" value="Получить инструкцию">
                         </div>
                         <p class="form__checkbox-container">
-                            <input type="checkbox" required><span>Согласен с <a href="#">обработкой персональных данных</a></span>
+                            <input type="checkbox" required checked><span>Согласен с <a href="#">обработкой персональных данных</a></span>
                         </p>
                     </form>
                 </div>
@@ -274,8 +274,15 @@
         </button>
         <!-- popup -->
         <div class="popup-back-call popup" id="popup-back-call">
-            <!-- position: absolute -->
-            <button class="popup__close" data-fancybox-close title="Закрыть"></button>
+            <h3 class="popup__title title">Обратный звонок</h3>
+            <p class="popup__text">Мы обязательно перезвоним Вам <span>в течении 5 минут!</span></p>
+            <form action="#" class="popup__form">
+                <input type="tel" name="tel" class="popup__tel input-tel" placeholder="Введите ваш телефон" pattern="\+[7|8]\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+                <input type="submit" value="Перезвоните мне" class="popup__submit button-back-call">
+                <p class="popup__checkbox-container">
+                    <input type="checkbox" required checked><span>Согласен с <a href="#">обработкой персональных данных</a></span>
+                </p>
+            </form>
         </div>
     </div>
     <!-- scripts -->
