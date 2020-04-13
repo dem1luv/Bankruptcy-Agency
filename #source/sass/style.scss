@@ -337,6 +337,7 @@ body {
         }
         .owl-dots {
             position: absolute;
+            z-index: 1;
             width: 100%;
             bottom: 20px;
             .owl-dot {
